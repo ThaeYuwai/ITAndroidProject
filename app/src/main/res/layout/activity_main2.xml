@@ -17,6 +17,7 @@
             android:layout_weight="1"
             />
         <EditText
+            android:id="@+id/edtnum1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
@@ -34,21 +35,41 @@
             android:layout_weight="1"
             />
         <EditText
+            android:id="@+id/edtnum2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
             android:layout_weight="1"/>
     </LinearLayout>
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add"
-        />
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Result : " />
+
+        <EditText
+            android:id="@+id/edtResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Substract"
-        />
+        android:onClick="buAdd"
+        android:text="Add" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="buSubstract"
+        android:text="Substract" />
 </LinearLayout>
